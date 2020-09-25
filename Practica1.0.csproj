@@ -46,11 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CapaDato\Clientes.cs" />
     <Compile Include="CapaDato\Jerarquia.cs" />
     <Compile Include="CapaDato\Login.cs" />
+    <Compile Include="CapaNegocio\MetodosClientes.cs" />
     <Compile Include="CapaNegocio\ConexionBBDD.cs" />
     <Compile Include="CapaNegocio\MetodosGenericos.cs" />
     <Compile Include="CapaNegocio\MetodosLogin.cs" />
+    <Compile Include="CapaPresentacion\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaPresentacion\FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaPresentacion\FormClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaPresentacion\FormClientes.Designer.cs">
+      <DependentUpon>FormClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="CapaPresentacion\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +79,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CapaPresentacion\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaPresentacion\FormClientes.resx">
+      <DependentUpon>FormClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CapaPresentacion\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,6 +99,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -93,6 +114,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\png_camion2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_nintendo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_nintendo1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
