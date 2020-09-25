@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Practica1._0.CapaPresentacion
 {
-    public partial class FormUsuarioNuevo : System.Windows.Forms.Form
+    public partial class FormUsuarioNuevo : Form
     {
         MetodosLogin metodoLogin = new MetodosLogin();
         MetodosGenericos mg = new MetodosGenericos();
